@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sell Scrap</title>
+</head>
+<body>
+    <header>
+        <h1>Sell Your Scrap</h1>
+        <div class="cart-info">
+            <span>Cart: <span id="cart-count">0</span> items</span>
+            <span>Total: ₹<span id="total-price">0</span></span>
+        </div>
+    </header>
+    <div class="main">
+        <h2>Submit Scrap Item</h2>
+        <form id="scrap-form">
+            <label for="scrap-name">Scrap Name:</label>
+            <input type="text" id="scrap-name" required>
+
+            <label for="scrap-description">Description:</label>
+            <textarea id="scrap-description" required></textarea>
+
+            <label for="scrap-image">Upload Image:</label>
+            <input type="file" id="scrap-image" accept="image/*" required>
+
+            <button type="submit">Submit Scrap Item</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    
+    
+    <footer>
+        <p>&copy; 2024 Online Construction Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
